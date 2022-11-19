@@ -1,0 +1,77 @@
+{% extends 'index.html' %}
+{% block body %}
+    <div class="p-4">
+        <div class="row mb-3">
+            <div class="col-4">
+                <div class="d-flex justify-content-right">
+                    <img src="static\Image\background_image.jpg" class="card-img-top" alt="..." />
+                </div>
+                </div>
+            <div class="col-8">
+                <div class="card p-2 ms-2 my-2"> 
+                    <div class="card-body">
+                        <form action="/" method="post" id="theForm">
+                            <div class="row mb-3">
+                                <label for="gre" class="col-lg-2 col-form-label"><b>GRE Score:</b></label>
+                                <div class="col-lg-10">    
+                                    <input type="number" class="form-control" id="gre" name="gre" min="250" max="340" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="tofel" class="col-lg-2 col-form-label"><b>TOFEL Score:</b></label>
+                                <div class="col-lg-10">    
+                                    <input type="number" class="form-control" id="tofel" name="tofel" min="50" max="120" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="university_rating" class="col-lg-2 col-form-label"><b>University Rating:</b></label>
+                                <div class="col-lg-10">    
+                                <input type="number" class="form-control" id="university_rating" step="0.01" name="university_rating" min="1" max="5" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="sop" class="col-lg-2 col-form-label"><b>SOP:</b></label>
+                                <div class="col-lg-10">    
+                                <input type="number" class="form-control" id="sop" name="sop" step="0.01" min="1" max="5" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="lor" class="col-lg-2 col-form-label"><b>LOR:</b></label>
+                                <div class="col-lg-10">    
+                                <b><input type="number" class="form-control" id="lor" name="lor" step="0.01" min="1" max="5" required>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <label for="cgpa" class="col-lg-2 col-form-label"><b>CGPA:</b></label>
+                                <div class="col-lg-10">    
+                                <input type="number" class="form-control" id="cgpa" name="cgpa" step="0.01" min="5" max="10" required>
+                                </div>
+                            </div>
+                            <fieldset class="row mb-3">
+                                <legend class="col-form-label col-sm-2 pt-0"><b>Research:</b></legend>
+                                <div class="col-sm-10">
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="yes_no_radio" id="gridRadios1" value="1">
+                                        <label class="form-check-label" for="yes_no_radio">
+                                        Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="yes_no_radio" id="gridRadios2" value="0" checked>
+                                        <label class="form-check-label" for="yes_no_radio">
+                                        No
+                                        </label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="row lg-3">
+                                <div class="col-lg-2 mb-2 me-3">
+                                    <button type="submit" class="btn btn-primary" id="button">Predict</button>
+                                </div>
+                        </form>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
