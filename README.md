@@ -1,6 +1,8 @@
 # IBM-Project-43914-1660720604
 University Admit Eligibility Predictor 
 
+Demo Video Link : https://youtu.be/XNvmds-lWQo
+
 Team ID : PNT2022TMID37049
 
 Team Lead : Abirami.N
